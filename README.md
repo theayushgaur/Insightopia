@@ -1,4 +1,4 @@
-# expense_app
+# A Multi-Country News App
 
 A new Flutter project.
 
