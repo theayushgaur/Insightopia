@@ -1,8 +1,10 @@
+import 'package:expense_app/widgets/navbar_2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/favourite_item.dart';
+import '../widgets/navbar.dart';
 import 'news_tile2.dart';
 import 'news_title3.dart';
 
@@ -78,6 +80,7 @@ class _FavScreenState extends State<FavScreen> {
         // ],
       ),
       backgroundColor: Theme.of(context).colorScheme.primary,
+      bottomNavigationBar: const bottom_nav_bar(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

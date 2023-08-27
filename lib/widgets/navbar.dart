@@ -36,6 +36,7 @@ class bottom_nav_bar extends StatelessWidget {
                     Get.to(() => Home());
                   },
                   icon: Icons.home,
+                  iconColor: Colors.white,
                 ),
                 // bottomnavicon(
                 //   onTap: () {
@@ -50,6 +51,7 @@ class bottom_nav_bar extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => FavScreen()));
                   },
                   icon: Icons.favorite,
+                  iconColor: Colors.red,
                   // title: 'Home',
                 ),
                 bottomnavicon(
@@ -57,6 +59,7 @@ class bottom_nav_bar extends StatelessWidget {
                     Get.to(() => Home());
                   },
                   icon: Icons.person,
+                  iconColor: Colors.white,
                   // title: 'Home',
                 ),
               ],

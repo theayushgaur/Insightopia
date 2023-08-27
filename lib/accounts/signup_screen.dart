@@ -1,6 +1,7 @@
 import 'package:expense_app/accounts/signin_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../screens/main_screen.dart';
 import '../widgets/button.dart';
 import '../widgets/cicular_container.dart';
 import '../widgets/textField_name.dart';
@@ -152,7 +153,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
               SizedBox(
                 height: 30,
               ),
-              SignButton(nameText: 'Sign Up'),
+              GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => const Home(),
+                        ));
+                  },
+                  child: SignButton(nameText: 'Sign Up')),
               SizedBox(
                 height: 30,
               ),

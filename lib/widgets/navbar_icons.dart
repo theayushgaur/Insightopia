@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class bottomnavicon extends StatelessWidget {
   final void Function()? onTap;
   final IconData? icon;
+  final Color iconColor;
 
   const bottomnavicon({
     super.key,
     this.onTap,
     this.icon,
+    required this.iconColor,
   });
 
   @override
@@ -19,7 +21,7 @@ class bottomnavicon extends StatelessWidget {
         width: 90,
         child: Icon(
           icon,
-          color: Colors.white,
+          color: iconColor,
         ),
       ),
     );
